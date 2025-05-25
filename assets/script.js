@@ -1,6 +1,9 @@
 const correctSound = new Audio('assets/sounds/certo.mp3');
 const wrongSound = new Audio('assets/sounds/errado.mp3');
 
+correctSound.playbackRate = 2.0;
+wrongSound.playbackRate = 2.0;
+
 
 function checkMatch() {
   const [card1, card2] = flippedCards;
