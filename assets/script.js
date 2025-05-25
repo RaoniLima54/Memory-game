@@ -46,11 +46,7 @@ const message = document.getElementById('message');
 const historyDiv = document.getElementById('history');
 
 function initGame() {
-  document.body.addEventListener('click', function enableAudio() {
-  correctSound.play().catch(() => {});
-  wrongSound.play().catch(() => {});
-  document.body.removeEventListener('click', enableAudio);
-});
+
   cards = [...images, ...images].sort(() => 0.5 - Math.random());
   gameBoard.innerHTML = '';
   flippedCards = [];
